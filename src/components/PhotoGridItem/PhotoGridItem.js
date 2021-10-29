@@ -14,7 +14,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
             type="image/jpeg"
             srcSet={`${src} 1x, ${src.replace('.jpg', '@2x.jpg')} 2x, ${src.replace('.jpg', '@3x.jpg')} 3x`}
           />
-          <Image src={src} />
+          <Image src={src} alt={alt} />
         </picture>
       </Anchor>
       <Tags>
@@ -39,7 +39,6 @@ const Image = styled.img`
   border-radius: 2px;
   margin-bottom: 8px;
   object-fit: cover;
-  aspect-ratio: 1 / 1;
 `;
 
 const Tags = styled.ul`
