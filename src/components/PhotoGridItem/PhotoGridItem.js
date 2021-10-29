@@ -46,20 +46,20 @@ const Tags = styled.ul`
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
-  li :not(:first-of-type) {
-    margin-left: 8px;
-  }
+  padding: 4px 0px;
 `;
 
 const Tag = styled.li`
   padding: 4px 8px;
-  line-height: calc(1rem + 8px);
   background: var(--color-gray-300);
   font-size: 0.875rem;
   font-weight: 475;
   color: var(--color-gray-800);
   display: inline;
+
+  &:not(:first-of-type) {
+    margin-left: 8px;
+  }
 `;
 
 export default PhotoGridItem;
